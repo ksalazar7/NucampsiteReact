@@ -16,7 +16,7 @@ const DisplayList = () => {
     ]);
 
     console.log('display items:', items);
-    <Row>
+    return (<Row>
         {items.map((item, idx) => {
             const { featuredItem, isLoading, errMsg } = item;
             if (isLoading) {
@@ -33,7 +33,7 @@ const DisplayList = () => {
                 )
             );
         })}
-    </Row>
+    </Row>)
 };
 
     export default DisplayList;
